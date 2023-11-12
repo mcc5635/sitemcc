@@ -4,6 +4,13 @@ import PostPreview from "@/components/blog/PostPreview";
 import SocialList from "@/components/SocialList";
 import { getAllPosts, sortMDByDate } from "@/utils";
 
+import home from "../assets/IMG_2953.jpeg";
+
+
+import { Image } from "astro:assets";
+import { getImage } from "astro:assets";
+import PageLayout from "@/layouts/Base";
+
 const MAX_POSTS = 10;
 const allPosts = await getAllPosts();
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
@@ -80,6 +87,9 @@ const cactusTechh: Array<{ title: string; desc: string; href: string }> = [
     Etc. <br>
     Proudly from Los Angeles, California. <br>
 </p>
+  <div class="relative w-full mx-auto max-w-7xl items-center py-12 pb-12">
+        <Image src={home1} alt="person head" format="avif" quality={"high"} />
+    </div>
 	</section>
 	<section class="mt-16">
 		<h2 class="title mb-4 text-xl">My Research + Professional work:</h2>
