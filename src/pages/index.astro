@@ -57,18 +57,6 @@ const cactusTech: Array<{ title: string; desc: string; href: string }> = [
     Proudly from Los Angeles, California. <br>
 </p>
 	</section>
-	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-xl">My Research + Professional work:</h2>
-		<ul class="space-y-4 sm:space-y-2">
-			{
-				allPostsByDate.map((p) => (
-					<li class="flex flex-col gap-x-2 sm:flex-row">
-						<PostPreview post={p} />
-					</li>
-				))
-			}
-		</ul>
-	</section>
 	<section class="mt-16">
 		<h2 class="title mb-4 text-xl">My Research + Professional work:</h2>
 		<ul class="space-y-4 sm:space-y-2">
