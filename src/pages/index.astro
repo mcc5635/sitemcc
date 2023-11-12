@@ -5,7 +5,8 @@ import SocialList from "@/components/SocialList";
 import { getAllPosts, sortMDByDate } from "@/utils";
 
 import home from "../assets/IMG_2953.jpeg";
-
+import home1 from "../assets/IMG_0089.jpeg";
+import home2 from "../assets/IMG_4372.jpeg"; 
 
 import { Image } from "astro:assets";
 import { getImage } from "astro:assets";
@@ -87,8 +88,10 @@ const cactusTechh: Array<{ title: string; desc: string; href: string }> = [
     Etc. <br>
     Proudly from Los Angeles, California. <br>
 </p>
-  <div class="relative w-full mx-auto max-w-7xl items-center py-12 pb-12">
+  <div class="relative w-full mx-auto max-w-3xl items-center py-3 pb-3">
         <Image src={home} alt="person head" format="avif" quality={"high"} />
+        <Image src={home1} alt="person head" format="avif" quality={"high"} />
+        <Image src={home2} alt="person head" format="avif" quality={"high"} />
     </div>
 	</section>
 	<section class="mt-16">
